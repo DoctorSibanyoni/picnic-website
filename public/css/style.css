@@ -1,0 +1,163 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #4A4A4A;
+    background-color: #FAFAF7;
+}
+
+/* Navigation */
+
+.navbar-brand {
+    letter-spacing: 1px;
+}
+
+/* Hero Section */
+
+.hero-section {
+    min-height: 100vh;
+    position: relative;
+
+    /* Background image */
+    background-image: url('/images/Img01.jpg');
+
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* Soft overlay to blend with the site colours */
+
+.hero-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background: linear-gradient(
+        rgba(43, 56, 43, 0.35),
+        rgba(43, 56, 43, 0.45)
+    );
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    padding: 2rem;
+}
+
+.hero-section h1,
+.hero-section p {
+    color: #FFFFFF;
+    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.35);
+}
+
+/* Buttons inside hero */
+
+.hero-section .btn-dark {
+    background-color: #F8FBEF;
+    color: #4A4A4A;
+    border: none;
+}
+
+.hero-section .btn-dark:hover {
+    background-color: #FFFFFF;
+    color: #4A4A4A;
+}
+
+.hero-section .btn-outline-light {
+    border: 2px solid #FFFFFF;
+    color: #FFFFFF;
+}
+
+.hero-section .btn-outline-light:hover {
+    background-color: #FFFFFF;
+    color: #4A4A4A;
+}
+
+/* Benefits section */
+
+.benefits-section {
+    background: linear-gradient(
+        135deg,
+        #DFF6DD,
+        #F8FBEF
+    );
+}
+
+/* Cards */
+
+.card {
+    border: none;
+    border-radius: 16px;
+    background-color: #FFFFFF;
+}
+
+.bg-light {
+    background-color: #F4F8F2 !important;
+}
+
+.gallery-box {
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.gallery-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.gallery-img:hover {
+    transform: scale(1.25);
+}
+
+/* Footer */
+
+footer {
+    font-size: 0.95rem;
+}
+
+/* WhatsApp Button */
+
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 30px;
+    line-height: 60px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    transition: transform 0.3s ease;
+}
+
+.whatsapp-float:hover {
+    color: white;
+    transform: scale(1.1);
+}
+
+.footer-logo {
+    height: 30px;
+    width: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.footer-logo:hover {
+    transform: scale(1.10);
+}
+
+.footer-logo-link {
+    display: inline-block;
+}

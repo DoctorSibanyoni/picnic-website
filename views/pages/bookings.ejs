@@ -1,0 +1,60 @@
+<section class="py-5">
+  <div class="container">
+    <h1 class="text-center mb-5">Book Your Picnic</h1>
+
+    <form action="/bookings" method="POST" class="mx-auto" style="max-width: 700px;">
+      <div class="mb-3">
+        <label class="form-label">Full Name</label>
+        <input type="text" name="full_name" class="form-control" maxlength="50" required>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Email Address</label>
+        <input type="email" name="email" class="form-control" required>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Phone Number</label>
+        <input type="text" name="phone" class="form-control" pattern="^(\+27|0)[6-8][0-9]{8}$" placeholder="+27821234567 or 0821234567" required>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Picnic Type</label>
+        <select name="package_type" class="form-select" required>
+          <option value="">Select Package</option>
+          <option>Romantic Picnic</option>
+          <option>Corporate Team Building</option>
+          <option>Group Picnic</option>
+        </select>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Number of guests</label>
+        <input type="number" name="guest_count" class="form-control" min="1" max="20" required>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Preferred Date</label>
+        <input
+          type="date"
+          id="bookingDate"
+          name="booking_date"
+          class="form-control"
+          required
+        >
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Additional Notes</label>
+        <textarea name="notes" rows="4" class="form-control"  maxlength="150"></textarea>
+      </div>
+
+      <button
+        type="submit"
+        class="btn btn-dark w-100"
+        id="submitBtn">
+        Submit Booking
+      </button>
+    </form>
+  </div>
+</section>
