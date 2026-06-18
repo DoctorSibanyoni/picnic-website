@@ -17,7 +17,7 @@ body {
     position: relative;
 
     /* Background image */
-    background-image: url('/images/Img01.jpg');
+    background-image: url('/images/Img01.jpeg');
 
     background-size: cover;
     background-position: center bottom;
