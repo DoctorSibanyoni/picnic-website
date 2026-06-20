@@ -70,8 +70,8 @@ router.post("/bookings", async (req, res) => {
 
     try {
         await transporter.sendMail({
-            from: "blissfulbites109@gmail.com",
-            to: "blissfulbites109@gmail.com",
+              from: process.env.EMAIL_USER,
+              to: process.env.EMAIL_USER,
             replyTo: email,
             subject: "New Picnic Booking",
             html: `
